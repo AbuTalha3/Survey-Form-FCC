@@ -6,19 +6,25 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="container">
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking time to help us improve the platform</p>
   <form id="survey-form">
-    <label for="Name" id="name-label">
-      <p>Name</p><input id="name" type="text" placeholder="Name" required>
+    <div class="form-group">
+    <label for="name" id="name-label">
+      <p>Name</p><input class="form-control" id="name" type="text" placeholder="Name" required>
     </label>
-    <label for="Email" id="email-label">
-      <p>Email</p><input  id="email" type="email" placeholder="Email" required>
+  </div>
+    <div class="form-group">
+    <label for="email" id="email-label">
+      <p>Email</p><input class="form-control" id="email" type="email" placeholder="Email" required>
     </label>
-    <label for="Age" id="number-label">
-      <p>Age (Optional)</p><input id="age" type="number" placeholder="Age" name="age" min="13" max="120"/>
+  </div>
+    <div class="form-group">
+    <label for="age" id="number-label">
+      <p>Age (Optional)</p><input class="form-control" id="number" type="number" placeholder="Age" name="age" min="13" max="99"/>
     </label>
-    <fieldset>
+  </div>
     <label for="dropdown">Which option best describes your current role?
       <select id="dropdown" name="dropdown">
         <option value="">(select current role)</option>
@@ -29,32 +35,34 @@
         <option value="5">Other</option>
       </select>
     </label>
-  </fieldset>
-  <fieldset>
-    <legend>Would you recommend freeCodeCamp to a friend?
-    </legend>
-    <label for="recom"><input id="recom" type="radio" name="recom" checked /> Definitely</label>
-    <label for="recom"><input id="recom" type="radio" name="recom" /> Maybe</label>
-    <label for="recom"><input id="recom" type="radio" name="recom" /> Not sure</label>
-  </fieldset>
-  <fieldset>
-    <label for="dropdown">What is your favioruite feature of the freeCodeCamp?
-      <select id="dropdown" name="dropdown">
-        <option value="">(select an option)</option>
-        <option value="1">Challenges</option>
-        <option value="2">Projects</option>
-        <option value="3">Community</option>
-        <option value="4">Open Source</option>
-      </select>
-    </label>
-  </fieldset>
-  <fieldset>
-    <label for="checkbox">What would you like to see improved? (Check all that apply)
-      <checkbox id="checkbox" name="checkbox">
-       
-      </checkbox>
-    </label>
-  </fieldset>
+    <legend>Would you recommend freeCodeCamp to a friend?</legend>
+    <label for="recom-yes"><input id="recom-yes" type="radio" value="Yes" name="recom" checked /> Definitely</label>
+    <label for="recom-maybe"><input id="recom-maybe" type="radio" value="Maybe" name="recom" /> Maybe</label>
+    <label for="recom-no"><input id="recom-no" type="radio" value="Not sure" name="recom" /> Not sure</label>
+    <label for="favourite">What is your favorite feature of freeCodeCamp?</label>
+    <select id="favourite" name="favourite">
+      <option value="">(select an option)</option>
+      <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open Source">Open Source</option>
+    </select>
+    <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+    <input type="checkbox" name="improvements" value="Front-end">Front-end
+    <input type="checkbox" name="improvements" value="Back-end">Back-end
+    <input type="checkbox" name="improvements" value="Data visualization">Data visualization
+    <input type="checkbox" name="improvements" value="Challenges">Challenges
+    <input type="checkbox" name="improvements" value="Open Source Community">Open Source Community
+    <input type="checkbox" name="improvements" value="Gitter Help Rooms">Gitter Help Rooms
+    <input type="checkbox" name="improvements" value="Videos">Videos
+    <input type="checkbox" name="improvements" value="City Meetups">City Meetups
+    <input type="checkbox" name="improvements" value="Wiki">Wiki
+    <input type="checkbox" name="improvements" value="Forum">Forum
+    <input type="checkbox" name="improvements" value="Additional Courses">Additional Courses
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Enter your comments here..." required></textarea>
+    <button id="submit" type="submit">Submit</button>
   </form>
+</div>
 </body>
 </html>
