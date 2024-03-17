@@ -1,4 +1,4 @@
-# FCC-Survey-Form
+# Survey-Form-FCC
 Tutorial from FCC for practice of HTML and CSS
 Build a Survey Form
 Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
