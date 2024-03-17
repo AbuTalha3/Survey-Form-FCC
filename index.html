@@ -7,9 +7,11 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
+<div class="heading">
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking time to help us improve the platform</p>
+
+  <div class="container">
   <form id="survey-form">
     <div class="form-group">
     <label for="name" id="name-label">
@@ -49,21 +51,23 @@
       <option value="Open Source">Open Source</option>
     </select>
     <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
-    <input type="checkbox" name="improvements" value="Front-end">Front-end
-    <input type="checkbox" name="improvements" value="Back-end">Back-end
-    <input type="checkbox" name="improvements" value="Data visualization">Data visualization
-    <input type="checkbox" name="improvements" value="Challenges">Challenges
-    <input type="checkbox" name="improvements" value="Open Source Community">Open Source Community
-    <input type="checkbox" name="improvements" value="Gitter Help Rooms">Gitter Help Rooms
-    <input type="checkbox" name="improvements" value="Videos">Videos
-    <input type="checkbox" name="improvements" value="City Meetups">City Meetups
-    <input type="checkbox" name="improvements" value="Wiki">Wiki
-    <input type="checkbox" name="improvements" value="Forum">Forum
-    <input type="checkbox" name="improvements" value="Additional Courses">Additional Courses
-    <label for="comments">Any comments or suggestions?</label>
-    <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Enter your comments here..." required></textarea>
+    <input type="checkbox" name="improvements" value="Front-end">Front-end<br>
+    <input type="checkbox" name="improvements" value="Back-end">Back-end<br>
+    <input type="checkbox" name="improvements" value="Data visualization">Data visualization<br>
+    <input type="checkbox" name="improvements" value="Challenges">Challenges<br>
+    <input type="checkbox" name="improvements" value="Open Source Community">Open Source Community<br>
+    <input type="checkbox" name="improvements" value="Gitter Help Rooms">Gitter Help Rooms<br>
+    <input type="checkbox" name="improvements" value="Videos">Videos<br>
+    <input type="checkbox" name="improvements" value="City Meetups">City Meetups<br>
+    <input type="checkbox" name="improvements" value="Wiki">Wiki<br>
+    <input type="checkbox" name="improvements" value="Forum">Forum<br>
+    <input type="checkbox" name="improvements" value="Additional Courses">Additional Courses<br>
+    <br>
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Enter your comments here..." required></textarea>
     <button id="submit" type="submit">Submit</button>
   </form>
+</div>
 </div>
 </body>
 </html>

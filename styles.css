@@ -6,12 +6,23 @@ body {
 }
 
 .container {
+  width: 70%;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #1e2a47;
+  color: antiquewhite;
+}
+
+.heading {
+ background-color: #6254fa;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Poppins', sans-serif;
 }
 
 h1 {
